@@ -1,0 +1,47 @@
+{
+    "login": {
+        "name": "Alessandro Curtinhas",
+        "email": "alessandro@gmail.com",
+        "password": "Teste@123",
+        "confirmedPassword": "Teste@123"
+    },
+    "emailnotFound": {
+        "email": "naoexiste@email.com.br",
+        "password": "Teste@123",
+        "confirmedPassword": "Teste@123"
+    },
+    "passwordwrong": {
+        "email": "alessandro@gmail.com",
+        "password": "Qualquer@123"
+    },
+    "emailRequired": {
+        "password": "Qualquer@123"
+    },
+    "emailPasswordRequired": {
+
+    },
+    "passwordRequired": {
+        "email": "fulano@gmail.com"
+    },
+    "emailEmpty": {
+        "email": "",
+        "password": "Qualquer@123"
+    },
+    "passwordEmpty": {
+        "email": "fulano@gmail.com",
+        "password": ""
+    },
+    "emailLimit150": {
+        "email": "nome.super.extenso.complexo.cheio.de.palavras.e.numeros.para.tornar.o.endereco.realmente.muito.longo1234567890@dominioextremamentelongocompletow.com.br",
+        "password": "Teste@1235"
+    },
+    "emailLimit3": {
+        "email": "a2",
+        "password": "Teste@1235"
+    },
+    "emailInvalid": {
+        "email": "aksjdalksl",
+        "password": "Teste@1235"
+    }
+    
+}

@@ -1,0 +1,8 @@
+{
+    "loginAdmin": {
+        "name": "Admin",
+        "email": "admin@admin.com.br",
+        "password": "Admin@1234",
+        "confirmedPassword": "Admin@1234"
+    }
+}
