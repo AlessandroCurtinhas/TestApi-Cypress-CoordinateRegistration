@@ -2,4 +2,5 @@
 
 #### Criação de testes de automatizados utilizando cypress;
 #### Criação de cenários de testes independentes;
-#### Massa de teste fixa e acesso direto ao banco de dados (SQL Server) para manipulação dos cenários de testes.
+#### Massa de teste fixa;
+#### Acesso direto ao banco de dados (SQL Server) para manipulação dos cenários de testes.
