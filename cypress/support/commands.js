@@ -60,10 +60,10 @@ Cypress.Commands.add('postRecoveryPasswordRequest', (email) => {
     }).then(response => { return response })
 })
 
-Cypress.Commands.add('postRecovery', (user) => {
+Cypress.Commands.add('postRecovery', (recoveryHash,user) => {
     cy.api({
         method: 'POST',
-        url: '/recoveryPassword',
+        url: `/recoveryPassword/${recoveryHash}`,
         body: user,
         failOnStatusCode: false
     }).then(response => { return response })
