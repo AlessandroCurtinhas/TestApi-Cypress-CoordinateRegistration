@@ -3,7 +3,13 @@
         "name": "Alessandro Curtinhas",
         "email": "alessandro@gmail.com",
         "password": "Teste@123",
-        "confirmedPassword": "Teste@123"
+        "confirmedPassword": "Teste@123",
+        "Cities" : [{
+            "name": "São Gonçalo",
+            "state": "Rio de Janeiro",
+            "UF": "RJ"
+            }
+        ]
     },
     "emailnotFound": {
         "email": "naoexiste@email.com.br",
@@ -43,5 +49,4 @@
         "email": "aksjdalksl",
         "password": "Teste@1235"
     }
-    
 }

@@ -274,7 +274,7 @@ describe('POST /recoveryPassword', () => {
 
         })
 
-        it('Os senha e confirmação de senha são obrigatórios', function () {
+        it('A senha e a confirmação de senha são obrigatórios', function () {
 
             const userLogin = this.users.userPasswordConfirmedPasswordRequired
             const userNewData = this.users.passwordConfirmedPasswordRequired
