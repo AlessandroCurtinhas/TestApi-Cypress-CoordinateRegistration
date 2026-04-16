@@ -6,7 +6,7 @@ describe('POST /recoveryPasswordRequest', () => {
         })
     })
 
-    it('Deve retornar sucesso na operação', function () {
+    it('Deve requisitar a recuperação de senha com sucesso', function () {
 
         const userData = this.users.login
         cy.deletePersonForever(userData)
@@ -30,7 +30,7 @@ describe('POST /recoveryPasswordRequest', () => {
 
     })
 
-    it('Deve retornar sucesso na operação mesmo com usuário não cadastrado', function () {
+    it('Deve requisitar a recuperação de senha com sucesso mesmo com usuário não cadastrado', function () {
 
         const userData = this.users.loginNoHash
         cy.deletePersonForever(userData)
@@ -70,7 +70,7 @@ describe('POST /recoveryPasswordRequest', () => {
             })
         })
 
-        it('O campo email é obrigatório', function () {
+        it('Não deve aceitar json sem o campo email', function () {
 
             const userLogin = this.users.emailRequired
 
@@ -94,7 +94,7 @@ describe('POST /recoveryPasswordRequest', () => {
 
     context('Validações do campo', () => {
 
-        it('O campo email não pode estar vazio', function () {
+        it('Não deve requisitar a recuperação de senha sem o campo email preenchido', function () {
 
             const userLogin = this.users.loginEmailRequired
 
@@ -115,7 +115,7 @@ describe('POST /recoveryPasswordRequest', () => {
             })
         })
 
-        it('O campo email não pode ser maior que 150 caracteres', function () {
+        it('Não deve requisitar a recuperação de senha com o campo email maior que 150 caracteres', function () {
 
             const userLogin = this.users.emailLimit150
 
@@ -138,7 +138,7 @@ describe('POST /recoveryPasswordRequest', () => {
 
         })
 
-        it('O campo email não pode ser menor que 3 caracteres', function () {
+        it('Não deve requisitar a recuperação de senha com o campo email menor que 3 caracteres', function () {
 
             const userLogin = this.users.emailLimit3
 
@@ -162,7 +162,7 @@ describe('POST /recoveryPasswordRequest', () => {
 
         })
 
-        it('O campo email não pode ser inválido', function () {
+        it('Não deve requisitar a recuperação de senha com o campo email inválido', function () {
 
             const userLogin = this.users.emailInvalid
 

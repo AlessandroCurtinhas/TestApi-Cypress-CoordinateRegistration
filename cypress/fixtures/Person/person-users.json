@@ -1,0 +1,484 @@
+{
+    "login": {
+        "name": "Alessandro Abulquerque",
+        "email": "alessandroAbu@gmail.com",
+        "password": "Teste@123",
+        "confirmedPassword": "Teste@123",
+        "cities": [
+            {
+                "name": "São Gonçalo",
+                "state": "Rio de Janeiro",
+                "uf": "RJ"
+            },
+            {
+                "name": "Rio de janeiro",
+                "state": "Rio de Janeiro",
+                "uf": "RJ"
+            }
+        ]
+    },
+    "loginEmailExists": {
+        "name": "Fulano Abulquerque",
+        "email": "FuAbu@gmail.com",
+        "password": "Teste@123",
+        "confirmedPassword": "Teste@123",
+        "cities": [
+            {
+                "name": "Niteroi",
+                "state": "Rio de Janeiro",
+                "uf": "RJ"
+            }
+        ]
+    },
+    "loginNewEmailExists": {
+        "name": "Fulano Abudabi",
+        "email": "FuAbu@gmail.com",
+        "password": "Teste@123",
+        "confirmedPassword": "Teste@123",
+        "cities": [
+            {
+                "name": "São João de Meriti",
+                "state": "Rio de Janeiro",
+                "uf": "RJ"
+            }
+        ]
+    },
+    "loginNameRequired": {
+        "email": "FuAbu@gmail.com",
+        "password": "Teste@123",
+        "confirmedPassword": "Teste@123",
+        "cities": [
+            {
+                "name": "Niteroi",
+                "state": "Rio de Janeiro",
+                "uf": "RJ"
+            }
+        ]
+    },
+    "loginEmailRequired": {
+        "name": "Ciclano Abudabi",
+        "password": "Teste@123",
+        "confirmedPassword": "Teste@123",
+        "cities": [
+            {
+                "name": "Niteroi",
+                "state": "Rio de Janeiro",
+                "uf": "RJ"
+            }
+        ]
+    },
+    "loginPasswordRequired": {
+        "name": "Terciano Abudabi",
+        "email": "FuAbu@gmail.com",
+        "confirmedPassword": "Teste@123",
+        "cities": [
+            {
+                "name": "Niteroi",
+                "state": "Rio de Janeiro",
+                "uf": "RJ"
+            }
+        ]
+    },
+    "loginConfirmedPasswordRequired": {
+        "name": "Terciano Abudabi",
+        "email": "FuAbu@gmail.com",
+        "password": "Teste@123",
+        "cities": [
+            {
+                "name": "Niteroi",
+                "state": "Rio de Janeiro",
+                "uf": "RJ"
+            }
+        ]
+    },
+    "loginCitiesRequired": {
+        "name": "Ciclano Silva",
+        "email": "cilana.silva@gmail.com",
+        "password": "Teste@123",
+        "confirmedPassword": "Teste@123"
+    },
+    "loginCityNameRequired": {
+        "name": "Cilcano de tal Abudabi",
+        "email": "ciFuAbu@gmail.com",
+        "password": "Teste@123",
+        "confirmedPassword": "Teste@123",
+        "cities": [
+            {
+                "state": "Rio de Janeiro",
+                "uf": "RJ"
+            }
+        ]
+    },
+    "loginStateRequired": {
+        "name": "Cristiano Roberto",
+        "email": "robercirbu@gmail.com",
+        "password": "Teste@123",
+        "confirmedPassword": "Teste@123",
+        "cities": [
+            {
+                "name": "Niteroi",
+                "uf": "RJ"
+            }
+        ]
+    },
+    "loginUfRequired": {
+        "name": "Fabiane Alameda",
+        "email": "fabiAl@gmail.com",
+        "password": "Teste@123",
+        "confirmedPassword": "Teste@123",
+        "cities": [
+            {
+                "name": "Niteroi",
+                "state": "Rio de Janeiro"
+            }
+        ]
+    },
+    "loginNameEmpty": {
+        "name": "",
+        "email": "fabiAl@gmail.com",
+        "password": "Teste@123",
+        "confirmedPassword": "Teste@123",
+        "cities": [
+            {
+                "name": "Niteroi",
+                "state": "Rio de Janeiro",
+                "uf": "RJ"
+            }
+        ]
+    },
+    "loginNameLimit3": {
+        "name": "Isa",
+        "email": "isinha@gmail.com",
+        "password": "Teste@123",
+        "confirmedPassword": "Teste@123",
+        "cities": [
+            {
+                "name": "Santos",
+                "state": "São Paulo",
+                "uf": "SP"
+            }
+        ]
+    },
+    "loginNameLimit150": {
+        "name": "Lidovico Maximiliano de Alcantara e Bragança dos Rios de Prata e das Montanhas Nevadas de Cristal do Norte da Transilvânia e de todos os Reinos do Além Ma",
+        "email": "isinha@gmail.com",
+        "password": "Teste@123",
+        "confirmedPassword": "Teste@123",
+        "cities": [
+            {
+                "name": "Santos",
+                "state": "São Paulo",
+                "uf": "SP"
+            }
+        ]
+    },
+    "loginNameNoSpecChar": {
+        "name": "V¡ctør _M@nu€l",
+        "email": "vitco@gmail.com",
+        "password": "Teste@123",
+        "confirmedPassword": "Teste@123",
+        "cities": [
+            {
+                "name": "Santos",
+                "state": "São Paulo",
+                "uf": "SP"
+            }
+        ]
+    },
+    "loginEmailEmpty": {
+        "name": "Cristano Ferreira",
+        "email": "",
+        "password": "Teste@123",
+        "confirmedPassword": "Teste@123",
+        "cities": [
+            {
+                "name": "Niteroi",
+                "state": "Rio de Janeiro",
+                "uf": "RJ"
+            }
+        ]
+    },
+    "loginEmailInvalid": {
+        "name": "Cristano Ferreira",
+        "email": "asdjk.com.br",
+        "password": "Teste@123",
+        "confirmedPassword": "Teste@123",
+        "cities": [
+            {
+                "name": "Niteroi",
+                "state": "Rio de Janeiro",
+                "uf": "RJ"
+            }
+        ]
+    },
+    "emailLimit3": {
+        "name": "Julia Ferreira",
+        "email": "a2",
+        "password": "Teste@1235",
+        "confirmedPassword": "Teste@1235",
+        "cities": [
+            {
+                "name": "São Gonçalo",
+                "state": "Rio de Janeiro",
+                "uf": "RJ"
+            }
+        ]
+    },
+    "emailLimit150": {
+        "name": "Gabriela Ferreira",
+        "email": "nome.super.extenso.complexo.cheio.de.palavras.e.numeros.para.tornar.o.endereco.realmente.muito.longo1234567890@dominioextremamentelongocompletow.com.br",
+        "password": "Teste@1235",
+        "confirmedPassword": "Teste@1235",
+        "cities": [
+            {
+                "name": "Osasco",
+                "state": "São Paulo",
+                "uf": "RJ"
+            }
+        ]
+    },
+    "loginPasswordEmpty": {
+        "name": "Cilcano de Tal",
+        "email": "ciclano9@gmail.com",
+        "password": "",
+        "confirmedPassword": "Teste@123",
+        "cities": [
+            {
+                "name": "São Gonçalo",
+                "state": "Rio de Janeiro",
+                "uf": "RJ"
+            },
+            {
+                "name": "Rio de janeiro",
+                "state": "Rio de Janeiro",
+                "uf": "RJ"
+            }
+        ]
+    },
+    "loginConfirmedPasswordEmpty": {
+        "name": "Cilcano de Tal",
+        "email": "ciclano9@gmail.com",
+        "password": "Teste@123",
+        "confirmedPassword": "",
+        "cities": [
+            {
+                "name": "São Gonçalo",
+                "state": "Rio de Janeiro",
+                "uf": "RJ"
+            },
+            {
+                "name": "Rio de janeiro",
+                "state": "Rio de Janeiro",
+                "uf": "RJ"
+            }
+        ]
+    },
+    "loginConfirmedPasswordAndPasswordNotEquals": {
+        "name": "Cilcano de Mario",
+        "email": "mario@gmail.com",
+        "password": "Teste@123",
+        "confirmedPassword": "Teste@345",
+        "cities": [
+            {
+                "name": "São Gonçalo",
+                "state": "Rio de Janeiro",
+                "uf": "RJ"
+            }
+        ]
+    },
+    "loginPasswordLimit8": {
+        "name": "Roberto Carlos",
+        "email": "robo@gmail.com",
+        "password": "Teste@1",
+        "confirmedPassword": "Teste@1",
+        "cities": [
+            {
+                "name": "São Gonçalo",
+                "state": "Rio de Janeiro",
+                "uf": "RJ"
+            }
+        ]
+    },
+    "loginPasswordUpperChar": {
+        "name": "Roberto Carlos",
+        "email": "robo@gmail.com",
+        "password": "teste@1234",
+        "confirmedPassword": "teste@1234",
+        "cities": [
+            {
+                "name": "São Gonçalo",
+                "state": "Rio de Janeiro",
+                "uf": "RJ"
+            }
+        ]
+    },
+    "loginCPasswordLowerCaseChar": {
+        "name": "Roberto Carlos",
+        "email": "robo@gmail.com",
+        "password": "TESTE@1234",
+        "confirmedPassword": "TESTE@1234",
+        "cities": [
+            {
+                "name": "São Gonçalo",
+                "state": "Rio de Janeiro",
+                "uf": "RJ"
+            }
+        ]
+    },
+    "loginPasswordNumber": {
+        "name": "Roberto Carlos",
+        "email": "robo@gmail.com",
+        "password": "TESTE@abcde",
+        "confirmedPassword": "TESTE@abcde",
+        "cities": [
+            {
+                "name": "São Gonçalo",
+                "state": "Rio de Janeiro",
+                "uf": "RJ"
+            }
+        ]
+    },
+    "loginPasswordSpecChar": {
+        "name": "Roberto Carlos",
+        "email": "robo@gmail.com",
+        "password": "Testeb123",
+        "confirmedPassword": "Testeb123",
+        "cities": [
+            {
+                "name": "São Gonçalo",
+                "state": "Rio de Janeiro",
+                "uf": "RJ"
+            }
+        ]
+    },
+    "loginCityEmpty": {
+        "name": "Roberto Carlos",
+        "email": "robo@gmail.com",
+        "password": "Teste@123",
+        "confirmedPassword": "Teste@123",
+        "cities": [
+            {
+                "name": "",
+                "state": "Rio de Janeiro",
+                "uf": "RJ"
+            }
+        ]
+    },
+    "loginStateEmpty": {
+        "name": "Roberto Carlos",
+        "email": "robo@gmail.com",
+        "password": "Teste@123",
+        "confirmedPassword": "Teste@123",
+        "cities": [
+            {
+                "name": "Volta Redonda",
+                "state": "",
+                "uf": "RJ"
+            }
+        ]
+    },
+    "loginUFEmpty": {
+        "name": "Roberto Carlos",
+        "email": "robo@gmail.com",
+        "password": "Teste@123",
+        "confirmedPassword": "Teste@123",
+        "cities": [
+            {
+                "name": "Volta Redonda",
+                "state": "Rio de Janeiro",
+                "uf": ""
+            }
+        ]
+    },
+    "loginUFLimit2": {
+        "name": "Roberto Carlos",
+        "email": "robo@gmail.com",
+        "password": "Teste@123",
+        "confirmedPassword": "Teste@123",
+        "cities": [
+            {
+                "name": "Volta Redonda",
+                "state": "Rio de Janeiro",
+                "uf": "RJD"
+            }
+        ]
+    },
+    "loginUFLimit1": {
+        "name": "Roberto Carlos",
+        "email": "robo@gmail.com",
+        "password": "Teste@123",
+        "confirmedPassword": "Teste@123",
+        "cities": [
+            {
+                "name": "Volta Redonda",
+                "state": "Rio de Janeiro",
+                "uf": "R"
+            }
+        ]
+    },
+     "loginUFUpperChar": {
+        "name": "Roberto Carlos",
+        "email": "robo@gmail.com",
+        "password": "Teste@123",
+        "confirmedPassword": "Teste@123",
+        "cities": [
+            {
+                "name": "Volta Redonda",
+                "state": "Rio de Janeiro",
+                "uf": "rj"
+            }
+        ]
+    },
+    "loginUFNumber": {
+        "name": "Roberto Carlos",
+        "email": "robo@gmail.com",
+        "password": "Teste@123",
+        "confirmedPassword": "Teste@123",
+        "cities": [
+            {
+                "name": "Volta Redonda",
+                "state": "Rio de Janeiro",
+                "uf": "R1"
+            }
+        ]
+    },
+    "loginUFAccentChar": {
+        "name": "Roberto Carlos",
+        "email": "robo@gmail.com",
+        "password": "Teste@123",
+        "confirmedPassword": "Teste@123",
+        "cities": [
+            {
+                "name": "Volta Redonda",
+                "state": "Rio de Janeiro",
+                "uf": "RÂ"
+            }
+        ]
+    },
+    "loginStateEmpty": {
+        "name": "Roberto Carlos",
+        "email": "robo@gmail.com",
+        "password": "Teste@123",
+        "confirmedPassword": "Teste@123",
+        "cities": [
+            {
+                "name": "Volta Redonda",
+                "state": "",
+                "uf": "RJ"
+            }
+        ]
+    },
+    "loginCityEmpty": {
+        "name": "Roberto Carlos",
+        "email": "robo@gmail.com",
+        "password": "Teste@123",
+        "confirmedPassword": "Teste@123",
+        "cities": [
+            {
+                "name": "",
+                "state": "Rio de Janeiro",
+                "uf": "RJ"
+            }
+        ]
+    }
+}

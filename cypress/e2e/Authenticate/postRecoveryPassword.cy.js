@@ -60,7 +60,7 @@ describe('POST /recoveryPassword', () => {
 
     })
 
-    it('Após 30 minutos não deve ser possível recuperar a senha', function () {
+    it('Não deve alterar a senha após 30 minutos da requisição', function () {
         const userData = this.users.loginAdd30Min
         const userNewData = this.users.loginAdd30MinNewPassword
 
@@ -107,7 +107,7 @@ describe('POST /recoveryPassword', () => {
 
     })
 
-    it('Não deve recuperar a senha com hash não registrado', function () {
+    it('Não deve alterar a senha com hash não registrado', function () {
         const userNewData = this.users.loginHashWrong
         const recoveryHash = '21614D7B-5E28-4F33-83A5-831136232122'
 
@@ -129,7 +129,7 @@ describe('POST /recoveryPassword', () => {
 
     })
 
-    it('Hash de recuperação de senha é obrigatório', function () {
+    it('Não deve alterar a senha sem informar o hash de recuperação', function () {
         const userNewData = this.users.loginHashRequired
         const recoveryHash = ''
 
@@ -182,7 +182,7 @@ describe('POST /recoveryPassword', () => {
             })
         })
 
-        it('O campo senha é obrigatório', function () {
+        it('Não deve aceitar json sem o campo senha', function () {
 
             const userLogin = this.users.userPasswordRequired
             const userNewData = this.users.passwordRequired
@@ -212,8 +212,9 @@ describe('POST /recoveryPassword', () => {
                                     const body = responseRecovery.body
 
                                     expect(body.success).to.be.false
-                                    expect(body.message).to.have.length(2)
+                                    expect(body.message).to.have.length(3)
                                     expect(body.message).to.include('Não foi possível concluir a operação.')
+                                    expect(body.message).to.include('A senha é obrigatória.')
                                     expect(body.message).to.include('As senhas devem ser iguais.')
                                     expect(body.data).to.be.null
 
@@ -226,7 +227,7 @@ describe('POST /recoveryPassword', () => {
             })
         })
 
-        it('O campo de confirmação de senha é obrigatório', function () {
+        it('Não deve aceitar json sem o campo confirmação de senha', function () {
 
             const userLogin = this.users.userConfirmedPasswordRequired
             const userNewData = this.users.confirmedPasswordRequired
@@ -256,11 +257,10 @@ describe('POST /recoveryPassword', () => {
                                     const body = responseRecovery.body
 
                                     expect(body.success).to.be.false
-                                    expect(body.message).to.have.length(4)
+                                    expect(body.message).to.have.length(3)
                                     expect(body.message).to.include('Não foi possível concluir a operação.')
                                     expect(body.message).to.include('As senhas devem ser iguais.')
-                                    expect(body.message).to.include('A confirmação da senha é obrigatória.')
-                                    expect(body.message).to.include('A senha é obrigatória.')
+                                    expect(body.message).to.include('A confirmação de senha é obrigatória.')
                                     expect(body.data).to.be.null
 
                                     expect(body.statusCode).to.eq(400)
@@ -274,7 +274,7 @@ describe('POST /recoveryPassword', () => {
 
         })
 
-        it('A senha e a confirmação de senha são obrigatórios', function () {
+        it('Não deve aceitar json sem o campo senha e confirmação de senha', function () {
 
             const userLogin = this.users.userPasswordConfirmedPasswordRequired
             const userNewData = this.users.passwordConfirmedPasswordRequired
@@ -306,7 +306,7 @@ describe('POST /recoveryPassword', () => {
                                     expect(body.success).to.be.false
                                     expect(body.message).to.have.length(3)
                                     expect(body.message).to.include('Não foi possível concluir a operação.')
-                                    expect(body.message).to.include('A confirmação da senha é obrigatória.')
+                                    expect(body.message).to.include('A confirmação de senha é obrigatória.')
                                     expect(body.message).to.include('A senha é obrigatória.')
                                     expect(body.data).to.be.null
 
@@ -325,7 +325,7 @@ describe('POST /recoveryPassword', () => {
 
     context('Validações dos campos', () => {
 
-        it('A senha de confirmação não pode ser diferente', function () {
+        it('Não deve alterar a senha com os campos senha e confirmação de senha divergentes', function () {
             const userData = this.users.loginDiffPassword
             const userNewData = this.users.loginDiffPasswordRecovery
 
@@ -368,7 +368,7 @@ describe('POST /recoveryPassword', () => {
 
         })
 
-        it('A senha é obrigatória', function () {
+        it('Não deve alterar a senha sem o campo senha preenchido', function () {
             const userData = this.users.userPasswordRequired
             const userNewData = this.users.userPasswordRequiredRequest
 
@@ -410,7 +410,7 @@ describe('POST /recoveryPassword', () => {
 
         })
 
-        it('A confirmação de senha é obrigatória', function () {
+        it('Não deve alterar a senha sem o campo confirmação de senha preenchido', function () {
             const userData = this.users.userConfirmedPasswordRequired
             const userNewData = this.users.userConfirmedPasswordRequiredRequest
 
@@ -452,7 +452,7 @@ describe('POST /recoveryPassword', () => {
 
         })
 
-        it('A senha deve ter pelo menos 8 caracteres', function () {
+        it('Não deve alterar a senha com o campo senha menor que 8 caracteres', function () {
             const userData = this.users.userPasswordMinRequired
             const userNewData = this.users.userPasswordMinRequiredRequest
 
@@ -495,7 +495,7 @@ describe('POST /recoveryPassword', () => {
 
         })
 
-        it('A senha deve ter pelo menos 1 caracterer maiúsculo', function () {
+        it('Não deve alterar a senha com o campo senha sem contêr pelo menos 1 caracter maiúsculo', function () {
             const userData = this.users.userPasswordUppercaseRequired
             const userNewData = this.users.userPasswordUppercaseRequiredRequest
 
@@ -538,7 +538,7 @@ describe('POST /recoveryPassword', () => {
 
         })
 
-        it('A senha deve ter pelo menos 1 caracterer minúsculo', function () {
+        it('Não deve alterar a senha com uma campo senha sem contêr pelo menos 1 caracter minúsculo', function () {
             const userData = this.users.userPasswordLowercaseRequired
             const userNewData = this.users.userPasswordLowercaseRequiredRequest
 
@@ -582,7 +582,7 @@ describe('POST /recoveryPassword', () => {
 
         })
 
-        it('A senha deve ter pelo menos 1 caracterer numeral', function () {
+        it('Não deve alterar a senha com o campo senha sem contêr pelo menos 1 caracter numeral', function () {
             const userData = this.users.userPasswordNumRequired
             const userNewData = this.users.userPasswordNumRequiredRequest
 
@@ -625,7 +625,7 @@ describe('POST /recoveryPassword', () => {
 
         })
 
-        it('A senha deve ter pelo menos 1 caracterer especial', function () {
+        it('Não deve alterar a senha com o campo senha sem contêr pelo menos 1 caracter especial', function () {
             const userData = this.users.userPasswordSpecRequired
             const userNewData = this.users.userPasswordSpecRequiredRequest
 

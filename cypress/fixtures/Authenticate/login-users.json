@@ -4,10 +4,10 @@
         "email": "alessandro@gmail.com",
         "password": "Teste@123",
         "confirmedPassword": "Teste@123",
-        "Cities" : [{
+        "cities" : [{
             "name": "São Gonçalo",
             "state": "Rio de Janeiro",
-            "UF": "RJ"
+            "uf": "RJ"
             }
         ]
     },
